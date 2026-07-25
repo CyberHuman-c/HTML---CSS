@@ -1,0 +1,36 @@
+@property --orbit-angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+body {
+  font-size: 100px;
+  text-align: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center vertically inside the height */
+  height: 600px;        
+  position: relative;
+  
+  /* Apply the circular math transformations */
+  transform: 
+    translateX(calc(cos(var(--orbit-angle)) * 100px))
+    translateY(calc(sin(var(--orbit-angle)) * 100px));
+    
+  /* Your animation settings (switched to infinite so it keeps looping) */
+  animation-name: Animation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; 
+  animation-timing-function: linear;
+}
+
+/* The missing math logic block */
+@keyframes Animation {
+  from {
+    --orbit-angle: 0deg;
+  }
+  to {
+    --orbit-angle: 360deg;
+  }
+}
