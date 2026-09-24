@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "JetBrains Mono", "Fira Code", Consolas, Monaco;
+  font-family: "JetBrains Mono", Consolas, Monaco;
   background-image: linear-gradient(
     to bottom,
     rgb(8, 225, 66),
@@ -19,6 +19,11 @@ body {
   align-items: center;
   min-height: 100vh;
   padding: 20px;
+  font-size: 25px;
+}
+
+header{
+  text-align: center;
 }
 
 #guide-lists {
@@ -27,30 +32,32 @@ body {
   margin: 10px 0;
 }
 
+
+
 section {
   background-color: rgba(255, 255, 255, 0.5);
   border: 2px solid rgb(83, 83, 83);
   border-radius: 20px;
-  padding: 10px;
-  margin: 5px;
-  zoom: 1.5;
+  padding: 30px;
+  margin: 10px;
+  max-width: 100%;
 }
 
 #current-question {
   text-align: center;
   font-weight: bold;
-  font-size: 25px;
   margin-bottom: 10px;
 }
 
 #question {
   margin: 20px 0;
-  font-size: 20px;
+  font-size: 100%;
 }
 
 button {
+  display: block;
+  margin: 0 auto;
   font-family: inherit;
-  font-size: 15px;
   cursor: pointer;
   background-color: white;
   border: 1px solid black;
@@ -68,12 +75,12 @@ button:hover {
 #choices {
   display: grid;
   place-items: center;
+  margin-bottom: 15px;
 }
 
 #choices button {
-  gap: 20px;
   padding: 10px;
-  width: 75%;
+  width: 60%;
   margin: 15px 7px;
   box-shadow: 10px 10px 2px rgb(70, 69, 69);
 }
@@ -84,15 +91,26 @@ button:hover {
   font-weight: bold;
   display: block;
   padding: 5px;
+  font-size: 20px;
+  
 }
 
 #scoreboard {
   white-space: pre-line; /*needed for the /n on JS*/
 }
 
-@media (width < 768px) {
+@media (max-width: 768px) {
+  body {
+    padding: 12px;
+  }
+
   section,
   main {
     padding: 35px;
+    margin: 0;
+  }
+
+  #choices button {
+    width: 100%;
   }
 }

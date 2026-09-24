@@ -92,7 +92,6 @@ if (startBTN) {
 const questionTitle = document.getElementById("current-question");
 const questionElement = document.getElementById("question");
 const choicesElement = document.getElementById("choices");
-const answersElement = document.getElementById("answers");
 const nextBTN = document.getElementById("next-btn");
 
 //applying questions & result system
@@ -116,6 +115,8 @@ function showQuestion() {
   q.choices.forEach((choice) => {
     const choiceBTN = document.createElement("button");
     choiceBTN.textContent = choice;
+    choiceBTN.style.fontWeight = "bold";
+    choiceBTN.style.fontSize = "20px";
     choiceBTN.addEventListener(
       "click",
       () => selectAnswer(choiceBTN, q.correct), //function selectAnswer( , )
@@ -140,14 +141,14 @@ function selectAnswer(button, correctAnswer) {
       choiceBTN.style.color = "black";
     }
   });
-  if (selected == correctAnswer) score++;
+  if (selected === correctAnswer) score++;
 
   if (currentQuestion === quizInfo.length - 1) {
     nextBTN.textContent = "Show Result";
   } else {
     nextBTN.textContent = "Next Question";
   }
-  nextBTN.style.display = "inline-block";
+  nextBTN.style.display = "block";
 }
 
 function nextQuestion() {
