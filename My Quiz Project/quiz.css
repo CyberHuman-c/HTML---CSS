@@ -1,0 +1,89 @@
+:root {
+}
+
+@media (width >= 768px) {
+  body {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (width < 768px) {
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-attachment: fixed;
+  font-family: "Gill Sans", sans-serif;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom,
+    rgb(8, 225, 66),
+    rgb(194, 255, 187),
+    rgb(8, 225, 66)
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body.dark{
+  background-image: linear-gradient(
+    to bottom,
+    rgb(8, 8, 8),
+    rgb(40, 42, 40),
+    rgb(8, 8, 8),
+  );
+  color: aliceblue;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+fieldset,
+.container {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgb(83, 83, 83);
+  border-radius: 20px;
+}
+
+#question{
+  margin: 20px;
+}
+
+button {
+  background-color: white;
+  border-radius: 6px;
+}
+
+#choices {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: aqua;
+  margin: 15px 7px;
+}
+
+#next-btn {
+  width: 35%;
+}
+
+#start-btn {}
+
+{
+
+}

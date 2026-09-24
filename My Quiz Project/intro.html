@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="quiz.css" />
+    <script src="quiz.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the Frontend Development Quiz!</h1>
+      <p>
+        Having confidence of yourself ? Test yourself to see if you are <strong>WORTHY</strong>.
+      </p>
+    </header>
+    <main>
+      <fieldset>
+        <legend><h2>Instruction</h2></legend>
+        <p><b>Note that:</b></p>
+        <ul id="guide-lists">
+          <li>There are 10 questions (3 for HTML / 3 for CSS / 4 for JS).</li>
+          <li>Each questions have 4 answer choices.</li>
+          <li>You have a 15-second timer for each questions.</li>
+          <li>
+            You won't be able to advance to the next question until you answer
+            the current one.
+          </li>
+          <li>
+            Click on the <b>"Confirm"</b> button when you think you have the right
+            answer and reveal the correct answer.
+          </li>
+          <li>
+            Once you advance to the next question, there is no going back.
+          </li>
+          <li>Make sure you revise your answer. Think carefully</li>
+          <li>you have unlimited tries.</li>
+        </ul>
+
+        <input type="checkbox" name="checkbox" id="checkbox"/>
+        <label for="checkbox" name="checkbox">
+            "I have read the instructions and I'm ready to take the quiz."
+        </label>
+        <br />
+        <button id="start-btn">Start Quiz</button>
+      </fieldset>
+    </main>
+  </body>
+</html>

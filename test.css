@@ -1,36 +1,29 @@
-@property --orbit-angle {
-  syntax: "<angle>";
-  inherits: false;
-  initial-value: 0deg;
+body{
+  max-width: 640px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #222222;
 }
 
-body {
-  font-size: 50px;
-  text-align: center; 
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Center vertically inside the height */
-  height: 600px;        
-  position: relative;
-  
-  /* Apply the circular math transformations */
-  transform: 
-    translateX(calc(cos(var(--orbit-angle)) * 100px))
-    translateY(calc(sin(var(--orbit-angle)) * 100px));
-    
-  /* Your animation settings (switched to infinite so it keeps looping) */
-  animation-name: Animation;
-  animation-duration: 3s;
-  animation-iteration-count: infinite; 
-  animation-timing-function: linear;
+body.dark{
+  background: #181818;
+  color: #f5f5f5;
 }
 
-/* The missing math logic block */
-@keyframes Animation {
-  from {
-    --orbit-angle: 0deg;
-  }
-  to {
-    --orbit-angle: 360deg;
-  }
+form{
+  display: grid;
+  gap: 12px;
+  margin-top: 24px;
 }
+
+input, button{
+  padding: 12px;
+  font: inherit;
+}
+
+button{
+  cursor: pointer;
+}
+

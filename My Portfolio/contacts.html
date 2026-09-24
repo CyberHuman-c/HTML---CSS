@@ -8,50 +8,37 @@
   </head>
   <body>
     <header>
-      <h1>My Portfolio</h1>
-      <table>
-        <tr>
-          <td>
-            <fieldset>
-              <legend><strong>Navigation:</strong></legend>
-              <nav>
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="About.html">About Me</a></li>
-                  <li><a href="Projects.html">Projects</a></li>
-                  <li><a href="skill.html">Skills</a></li>
-                  <li>Contacts <i>(you are here)</i></li>
-                </ul>
-              </nav>
-            </fieldset>
-            <p>
-              Please use the navigation bar above to learn about my journey.
-            </p>
-          </td>
-        </tr>
-      </table>
+      <h1 id="title"></h1>
+      <fieldset>
+        <legend><strong>Navigation:</strong></legend>
+        <p>Please use the navigation bar above to learn about my journey.</p>
+        <nav class="nav-bar">
+          <ul class="nav-ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About Me</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="skill.html">Skills</a></li>
+            <li id="here-li">Contacts</li>
+          </ul>
+        </nav>
+      </fieldset>
     </header>
+
     <main>
-      <table>
-        <tr>
-          <td>
-            <fieldset>
-              <legend><h2>Contacts</h2></legend>
-              <p>Feel free to reach out using my direct contact details</p>
-              <h3>Direct Contact Information</h3>
-              <p>
-                <b>Email: </b
-                ><a href="mailto:me391063@gmail.com">me391063@gmail.com</a>
-              </p>
-              <p><b>Phone no. : </b>01002842772</p>
-            </fieldset>
-          </td>
-        </tr>
-      </table>
+      <fieldset>
+        <legend><h2>Contacts:</h2></legend>
+        <p>Feel free to reach out using my direct contact details</p>
+        <h3>Direct Contact Information</h3>
+        <p>
+          <b>Email: </b
+          ><a id="email" href="mailto:me391063@gmail.com">me391063@gmail.com</a>
+        </p>
+        <p><b>Phone no. : </b>01002842772</p>
+      </fieldset>
     </main>
     <footer>
       <p>Mahmoud Emad.</p>
-      <p>Portfolio Built with pure HTML</p>
+      <p>Portfolio Built with HTML & CSS</p>
     </footer>
   </body>
 </html>
