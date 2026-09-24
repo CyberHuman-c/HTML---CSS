@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Quiz website test</title>
+    <link rel="stylesheet" href="css/quiz.css" />
+    <script src="js/quiz.js" defer></script>
+  </head>
+  <body>
+    <main id="main-page">
+      <h1>Welcome to the Frontend Development Quiz!</h1>
+      <p>
+        Having confidence of yourself ? Test yourself to see if you are
+        <strong>WORTHY</strong>.
+      </p>
+      <section id="instruction">
+        <h2>Instruction:</h2>
+        <p><b>Note that:</b></p>
+        <ul id="guide-lists">
+          <li>There are 10 questions (3 for HTML / 3 for CSS / 4 for JS).</li>
+          <li>Each questions have 4 answer choices.</li>
+          <li>
+            You won't be able to advance to the next question until you answer
+            the current one.
+          </li>
+          <li>
+            Once you advance to the next question, there is no going back.
+          </li>
+          <li>Think carefully before answering.</li>
+          <li>You have unlimited tries.</li>
+        </ul>
+        <button id="start-btn">Start Quiz</button>
+      </section>
+    </main>
+
+    <section id="quiz-page" hidden>
+      <h2 id="current-question">current question</h2>
+      <div id="container">
+        <article id="quiz">
+          <h3 id="question">question text</h3>
+          <div id="choices"></div>
+          <button id="next-btn"></button>
+        </article>
+      </div>
+    </section>
+
+    <section id="result-page" hidden>
+      <h2 id="result-title">Result:</h2>
+      <article id="result-screen">
+        <p id="result"></p>
+        <button id="restart-btn">Restart Quiz</button>
+      </article>
+    </section>
+
+    <section id="scoreboard" hidden></section>
+  </body>
+</html>
